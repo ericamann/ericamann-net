@@ -1,0 +1,54 @@
+@import '../../style/_palette.scss';
+
+.header {
+    background-color: $navy;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 2px -2px $gray;
+
+    .headshot {
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 25px;
+        }
+    }
+
+    .title {
+        margin-top: 95px;
+        flex-grow: 3;
+
+        img {
+            width: 400px;
+        }
+
+        nav {
+            margin-top: 12px;
+            font-size: 16pt;
+
+            a {
+                margin: 0 20px;
+            }
+        }
+    }
+
+    .connect {
+        color: $gray;
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        margin-top: 120px;
+        padding: 0 20px;
+
+        .fa {
+            font-size: 18pt;
+
+            &:hover {
+                cursor: pointer;
+                color: $pink;
+            }
+        }
+    }
+}
