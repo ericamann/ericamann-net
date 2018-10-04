@@ -10,10 +10,11 @@ import { BlogComponent } from './blog/blog.component';
 import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
-    { path: 'app', component: AboutComponent },
+    { path: 'about', component: AboutComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'blog', component: BlogComponent },
-    { path: '**', component: AboutComponent }
+    { path: '', redirectTo: '/about', pathMatch: 'full' },
+    { path: '**', redirectTo: '/about', pathMatch: 'full' }
   ];
   
 
